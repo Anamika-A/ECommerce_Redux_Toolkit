@@ -49,11 +49,11 @@ const FilteredProducts = () => {
                 return (
                   <div key={index}>
                     <Button
-                      color="gray"
+                      color="black"
                       size="lg"
                       variant="outlined"
                       ripple={true}
-                      className="text-black hover:bg-gray-300 duration-300 ease-in-out mr-4"
+                      className="text-black hover:bg-green-300 duration-300 ease-in-out mr-4"
                       onClick={() => dispatch(filterGender(item))}
                     >
                       {item}
@@ -62,11 +62,11 @@ const FilteredProducts = () => {
                 );
               })}
               <Button
-                color="gray"
+                color="black"
                 size="lg"
                 variant="outlined"
                 ripple={true}
-                className="text-black hover:bg-gray-300 duration-300 ease-in-out mr-4"
+                className="text-black hover:bg-green-300 duration-300 ease-in-out mr-4"
                 onClick={() => dispatch(sortByPrice())}
               >
                 High Price
@@ -74,11 +74,11 @@ const FilteredProducts = () => {
               <Menu>
                 <MenuHandler>
                   <Button
-                    color="gray"
+                    color="black"
                     size="lg"
                     variant="outlined"
                     ripple={true}
-                    className="text-black hover:bg-gray-300 duration-300 ease-in-out mr-4"
+                    className="text-black hover:bg-green-300 duration-300 ease-in-out mr-4"
                   >
                     Select a color
                   </Button>
@@ -101,11 +101,11 @@ const FilteredProducts = () => {
                 <MenuHandler>
                   <Button
                     disabled={type === "Bags" || type === "Shoes"}
-                    color="gray"
+                    color="black"
                     size="lg"
                     variant="outlined"
                     ripple={true}
-                    className="text-black hover:bg-gray-300 duration-300 ease-in-out mr-4"
+                    className="text-black hover:bg-green-300 duration-300 ease-in-out mr-4"
                   >
                     Select a size
                   </Button>
@@ -126,11 +126,11 @@ const FilteredProducts = () => {
             </div>
             <div className="pr-14">
               <Button
-                color="gray"
+                color="black"
                 size="lg"
                 variant="outlined"
                 ripple={true}
-                className="text-black hover:bg-gray-300 duration-300 ease-in-out mr-4"
+                className="text-black hover:bg-green-300 duration-300 ease-in-out mr-4"
                 onClick={() => dispatch(filterProducts(type))}
               >
                 Clear Filter
